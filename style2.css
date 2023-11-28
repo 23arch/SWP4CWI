@@ -1,0 +1,156 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 100; 
+  font-size: 36px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0; 
+}
+
+header {
+  background-color: #a0a0a0bb;
+  color: white;
+  padding: 10px;
+  text-align: center; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.LOGOH {
+  margin-right: 20px;
+  width: 300px;
+  height: 100px;
+}
+
+.Head {
+  display: flex;
+  align-items: center; 
+  margin-right: 10px;
+  margin-left: 10px
+}
+
+.Table,
+.Matches {
+  text-align: right;
+  margin-right: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.Content {
+  margin: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75rem;
+  border-color: #000000;
+  border: solid;
+  height: 40px;
+  text-align: center;
+  padding: 20px;
+  color: #000000;
+}
+
+.table-section{
+  justify-content: space-evenly;
+  align-items: normal;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 8px auto;
+  margin: 5px;
+  border-radius: 0.75rem;
+  border: solid;
+  height: 40px;
+  padding: 20px;
+  color: #000000;
+  width: 25%;
+}
+
+.wrapper2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 4px auto;
+  margin: 5px;
+  border-radius: 0.75rem;
+  border: solid;
+  height: 40px;
+  padding: 20px;
+  color: #000000;
+  width: 25%;
+}
+
+.text2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+
+.wrapperheader {
+  display: grid;
+  grid-template-columns: 10% auto;
+  grid-template-rows: 8px auto 12px;
+  margin-top: 40px;
+  width: 25%;
+  padding: 20px;
+}
+
+.text{
+  justify-content: space-between;
+  margin: 5px;
+  width: 800px;
+  height: 40px;
+  padding: 10px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border-color: #000000;
+  margin: 5px;
+  border-width: 3px;
+  padding:10px;
+}
+
+.Head{
+  gap: 40px;
+}
+
+.wri{
+  justify-content: space-evenly;
+  display: flex;
+  width: 60%;
+  justify-content: left;
+  margin-left: 30px;
+}
+
+
+.Table2{
+  margin-left: 30px;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.team{
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 20px;
+}
