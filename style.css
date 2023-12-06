@@ -82,7 +82,7 @@ body {
 
 .wrapperheader {
     display: grid;
-    grid-template-columns: 10% auto 80px 80px 80px 80px;
+    grid-template-columns: 10% auto 65px 80px 70px 80px;
     grid-template-rows: 8px auto 12px;
     margin-top: 40px;
     width: 60%;
@@ -108,7 +108,7 @@ body {
     width: 30px;
     border-color: #000000;
     margin: 5px;
-    border-width: 3px;
+    border-width: 1px;
     padding:10px;
 }
 
@@ -120,6 +120,7 @@ body {
 .S{
   font-family: 'Inter';
   font-size: 24px;
+
 }
 
 .N{

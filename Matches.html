@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="reset.css">
+  <script src="script2.js"></script>
   <title>Österreichische Bundesliga Tabelle</title>
 </head>
 <body>
-  <header style="margin-right: 20px;
-  margin-left: 20px;">
+  <header style="margin-right: 20px; margin-left: 20px;">
     <div class="container">
       <img class="LOGOH" src="Oefbl.png" alt="">
       <div class="Head">
@@ -19,74 +19,15 @@
     </div>
   </header>
 
-
   <div class="wrapperheader">
     <div class="Table2">Spiele</div>
     <div class="Team2"></div>
   </div>
-  <div class="wri">
-  <div class="wrapper2">
-    <img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-    <div class="team">Barcelona</div>
-</div>
-<div class="text2">12:45 Uhr</div>
-<div class="wrapper2">
-  <img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-  <div class="team">Barcelona</div>
-</div>
-</div>
-<div class="wri">
-<div class="wrapper2">
-  <img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-  <div class="team">Barcelona</div>
-</div>
-<div class="text2">12:45 Uhr</div>
-<div class="wrapper2">
-<img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-<div class="team">Barcelona</div>
-</div>
-</div>
 
-<div class="wri">
-<div class="wrapper2">
-  <img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-  <div class="team">Barcelona</div>
-</div>
-<div class="text2">12:45 Uhr</div>
-<div class="wrapper2">
-<img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-<div class="team">Barcelona</div>
-</div>
-</div>
+  <div id="upcomingMatches" class="matches-container"></div>
+  <button id="showMoreBtn" onclick="showMoreMatches()">Mehr anzeigen</button>
 
-<div class="wri">
-<div class="wrapper2">
-  <img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-  <div class="team">Barcelona</div>
-</div>
-<div class="text2">12:45 Uhr</div>
-<div class="wrapper2">
-<img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-<div class="team">Barcelona</div>
-</div>
-</div>
-
-
-<div class="wri">
-<div class="wrapper2">
-  <img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-  <div class="team">Barcelona</div>
-</div>
-<div class="text2">12:45 Uhr</div>
-<div class="wrapper2">
-<img class="logo" src="LogoValenciaBasket.png" style="height: 2vw;">
-<div class="team">Barcelona</div>
-</div>
-</div>
-
-  <section class="team-info" id="teamInfo">
-
-  </section>
+  <section class="team-info" id="teamInfo"></section>
 
   <script src="script.js"></script>
 </body>
