@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Übersicht</title>
+ <style>
+  #app {
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+   font-family: Arial, sans-serif;
+  }
+
+  #activity {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 10px;
+  }
+
+  #activity div {
+   display: flex;
+   justify-content: space-between;
+   padding: 5px 0;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+  }
+
+  #progress {
+   height: 20px;
+   background-color: #ddd;
+   margin: 20px 0;
+  }
+
+  #progress div {
+   height: 100%;
+   background-color: #4CAF50;
+  }
+
+  #training-tip, #yoga-video, #history {
+   padding: 20px;
+  }
+
+  #training-tip h3, #yoga-video h2 {
+   margin-top: 0;
+  }
+
+  #history li {
+   list-style: none;
+   padding: 5px 0;
+  }
+
+  #history li span {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-color: #4CAF50;
+   margin-right: 10px;
+  }
+ </style>
+</head>
+<body>
+ <div id="app">
+   <h1>Übersicht</h1>
+   <div id="activity">
+     <div>
+       <span>Bewegen</span>
+       <span>411/800 KCAL</span>
+     </div>
+     <div>
+       <span>Trainieren</span>
+       <span>32/30 MIN.</span>
+     </0>
+     <div>
+       <span>Stehen</span>
+       <span>5/12 STD.</span>
+     </div>
+     <div>
+       <span>Schritte</span>
+       <span>1.867</span>
+     </div>
+   </div>
+   <div id="progress">
+     <div style="width: 50%;"></div>
+   </div>
+   <div id="training-tip">
+     <h2>Trainingstipps</h2>
+     <h3>Funktionelles Krafttraining</h3>
+     <p>223 KCAL</p>
+     <a href="https://www.apple.com/apple-fitness-plus/" target="_blank">all ☎</a>
+   </div>
+   <div id="yoga-video">
+     <h2>Watch this Week's Tip</h2>
+     <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <p>How to set up your feet for warrior 1 in yoga with Fitness+ Trainer Jonelle</p>
+   </div>
+   <div id="history">
+     <h2>Verlauf</h2>
+     <ul>
+       <li>Sonntag <span>●●</span></li>
+     </ul>
+   </div>
+ </div>
+</body>
+</html>

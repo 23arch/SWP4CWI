@@ -9,12 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const upcomingMatchesContainer = document.getElementById("upcomingMatches");
             const showMoreBtn = document.getElementById("showMoreBtn");
             const showMoreContainer = document.getElementById("showMoreContainer");
+
             const upcomingMatches = data.filter(match => {
                 const matchDateTime = new Date(match.matchDateTime);
                 const currentDate = new Date();
                 const oneDay = 24 * 60 * 60 * 1000;
                 return matchDateTime < currentDate && !match.matchIsFinished;
             });
+
             const addMatchesToContainer = (matches, container, limit) => {
                 matches.slice(0, limit).forEach(match => {
                     const matchElement = document.createElement("div");
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img class="logo" src="${match.team1.teamIconUrl}" style="height: 2vw;">
                         <div class="team">${match.team1.teamName}</div>
                     `;
+
                     matchElement.appendChild(team1Element);
                     const matchTimeElement = document.createElement("div");
                     matchTimeElement.classList.add("text2");
@@ -35,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         minute: 'numeric',
                         hour12: false
                     });
+
                     matchTimeElement.textContent = formattedMatchDateTime + ' Uhr';
                     matchElement.appendChild(matchTimeElement);
                     const team2Element = document.createElement("div");
@@ -46,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     matchElement.appendChild(team2Element);
                     container.appendChild(matchElement);
                 });
+
             };
             addMatchesToContainer(upcomingMatches, upcomingMatchesContainer, 5);
             window.showMoreMatches = () => {
@@ -53,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 addMatchesToContainer(upcomingMatches, upcomingMatchesContainer, upcomingMatches.length);
                 showMoreContainer.style.display = 'none'; 
             };
+
             if (upcomingMatches.length > 5) {
                 showMoreContainer.style.display = 'block';
             }
