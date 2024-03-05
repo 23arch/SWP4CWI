@@ -1,0 +1,133 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100; 
+    font-size: 36px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0; 
+  }
+  
+  header {
+    background-color: #a0a0a0bb;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .LOGOH {
+    margin-right: 20px;
+    width: 400px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .Head {
+    display: flex;
+    align-items: center; 
+    margin-right: 10px;
+    margin-left: 10px
+  }
+  
+  .Table,
+  .Matches {
+    text-align: right;
+    margin-right: 20px;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+
+.table-section{
+    justify-content: space-evenly;
+    align-items: normal;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 10% auto 80px 80px 80px 80px;
+    grid-template-rows: 8px auto 12px;
+    margin: 5px;
+    border-radius: 0.75rem;
+    border: solid;
+    height: 40px;
+    padding: 20px;
+    color: #000000;
+    width: 60%;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.wrapperheader {
+    display: grid;
+    grid-template-columns: 10% auto 65px 80px 70px 80px;
+    grid-template-rows: 8px auto 12px;
+    margin-top: 40px;
+    width: 60%;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.text{
+    justify-content: space-between;
+    margin: 5px;
+    width: 800px;
+    height: 40px;
+    padding: 10px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 50%;
+    height: 22px;
+    width: 30px;
+    border-color: #000000;
+    margin: 5px;
+    border-width: 1px;
+    padding:10px;
+}
+
+.Table2{
+  font-family: 'Inter';
+  font-size: 24px;
+}
+
+.S{
+  font-family: 'Inter';
+  font-size: 24px;
+
+}
+
+.N{
+  font-family: 'Inter';
+  font-size: 24px;
+}
+
+.Pkt{
+  font-family: 'Inter';
+  font-size: 24px;
+}
+
+.Diff{
+  font-family: 'Inter';
+  font-size: 24px;
+}
+
+.Head{
+    gap: 40px;
+}
+
+
