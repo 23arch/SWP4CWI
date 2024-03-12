@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Table.css';
 import TableRow from './components/TableRow';
 
+
+
 const Table = () => {
   const [teamData, setTeamData] = useState([]);
 

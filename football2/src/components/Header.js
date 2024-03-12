@@ -6,8 +6,8 @@ export default function Header() {
       <div className="flex justify-between items-center mt-10 mr-20 ml-20 bg-slate-400">
         <img className="h-40" src="./oefbl.png" alt="" />
         <div className="Head">
-          <div className="Table" href="Table.html"><a href="Table.html">Table</a></div>
-          <div className="Matches" href="Matches.html"><a href="Matches.html">Matches</a></div>
+          <div className="Table" href="Table"><a href="Table">Table</a></div>
+          <div className="Matches" href="Matches"><a href="Matches">Matches</a></div>
         </div>
       </div>
     </header>

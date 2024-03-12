@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Matches.css';
 
+
 const Matches = () => {
   const [upcomingMatches, setUpcomingMatches] = useState([]);
 
@@ -37,7 +38,7 @@ const Matches = () => {
             hour: 'numeric',
             minute: 'numeric',
             hour12: false
-          })} 
+          })}
         </div>
         <div className="wrapper2">
           <img className="logo" src={match.team2.teamIconUrl} style={{ height: '2vw' }} alt={match.team2.teamName} />
@@ -52,9 +53,6 @@ const Matches = () => {
       <div id="upcomingMatches" className="matches-container">
         {addMatchesToContainer(upcomingMatches, 5)}
       </div>
-      {upcomingMatches.length > 5 && (
-        <button onClick={() => setUpcomingMatches(upcomingMatches.slice(0, upcomingMatches.length))}>Mehr anzeigen</button>
-      )}
     </div>
   );
 };
