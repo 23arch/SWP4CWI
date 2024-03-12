@@ -37,7 +37,7 @@ const Matches = () => {
             hour: 'numeric',
             minute: 'numeric',
             hour12: false
-          })} Uhr
+          })} 
         </div>
         <div className="wrapper2">
           <img className="logo" src={match.team2.teamIconUrl} style={{ height: '2vw' }} alt={match.team2.teamName} />

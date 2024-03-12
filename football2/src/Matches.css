@@ -1,18 +1,4 @@
-body {
-  font-family: 'Inter', sans-serif;
-  font-weight: 100; 
-  font-size: 36px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #f0f0f0; 
-}
 
-header {
-  background-color: #a0a0a0bb;
-  color: white;
-  padding: 10px;
-  text-align: center; 
-}
 
 .container {
   display: flex;

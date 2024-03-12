@@ -4,7 +4,7 @@ import Matches from './Matches';
 import './App.css';
 import Header from './components/Header';
 
-function App() {
+function MainMatch() {
   return (
     <div>
       <Header />
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainMatch;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Table.css';
+import TableRow from './components/TableRow';
 
 const Table = () => {
   const [teamData, setTeamData] = useState([]);
@@ -18,18 +19,23 @@ const Table = () => {
   }, []);
 
   return (
-    <div id="result">
-      {teamData.map(team => (
-        <div key={team.teamName} className="wrapper">
-          <img className="logo" src={team.teamIconUrl} style={{ height: '40px' }} alt={team.teamName} />
-          <div className="team">{team.teamName}</div>
-          <div className="circle">{team.won}</div>
-          <div className="circle">{team.lost}</div>
-          <div className="circle">{team.points}</div>
-          <div className="wrt">{team.goalDiff}</div>
-        </div>
-      ))}
-    </div>
+    <>
+
+      <div className="grid grid-cols-[10%,auto,80px,80px,80px,80px]  mb-2 border-black p-8 rounded-xl mt-px">
+        <div class="font-inter text-24">Table</div>
+        <div class="Team2"></div>
+        <div class="font-inter text-24">S</div>
+        <div class="font-inter text-24">N</div>
+        <div class="font-inter text-24">Pkt</div>
+        <div class="font-inter text-24">Diff</div>
+      </div>
+      <div id="result">
+        {teamData.map(team => (
+          <TableRow team={team}></TableRow>
+        ))}
+      </div>
+
+    </>
   );
 };
 
